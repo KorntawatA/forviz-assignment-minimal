@@ -1,5 +1,7 @@
+import SideBar from './SideBar'
+
 export default function UserMenu() {
     return (
-        <p>User Menu</p>
+        <SideBar />
     )
 }

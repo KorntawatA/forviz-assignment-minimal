@@ -38,13 +38,13 @@ export default function SideBar() {
             <Grid 
                 container 
                 columnGap={2} 
-                sx={
-                    {alignItems: "center",
+                sx={{
+                    alignItems: "center",
                     backgroundColor: "rgba(145, 158, 171, 0.12)",
                     borderRadius: "1rem",
                     padding: "1rem",
-                    width: "230px"}
-                }
+                    width: "230px"
+                }}
             >
                 <Avatar alt="Jaydon Frankie" src="src\assets\avatar_default.jpg" />
                 <Typography>Jaydon Frankie</Typography>

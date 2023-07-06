@@ -1,44 +1,7 @@
 import { Box, Card, CardContent, CardMedia, ThemeProvider, Typography, createTheme } from "@mui/material";
-import { productCard, customTypography } from "./theme/customTheme"
+import productTheme from "./theme/customTheme"
 
 export default function Product(props) {
-
-    console.log(customTypography)
-
-    const productTheme = createTheme({
-        components: {
-            // productCard
-            MuiCard: {
-                variants: [
-                    {
-                        props: { variant: "product" },
-                        style: {
-                            borderRadius: "12px",
-                            boxShadow: "0px 0px 8px gray",
-                            width: "275px"
-                        }
-                    }
-                ]
-            }
-        },
-        typography: {
-            // customTypography
-            fontFamily: "Open Sans",
-            subtitle1: {
-                margin: "0px",
-                fontWeight: "600",
-                lineHeight: "1.5",
-                fontSize: "1rem"
-            },
-            subtitle2: {
-                margin: "0px",
-                fontWeight: "600",
-                lineHeight: "1.57143"
-            }
-        }
-    })
-    // console.log(productTheme)
-
     const colors = props.colors.map(c => {
         return (
             <Box sx={{
